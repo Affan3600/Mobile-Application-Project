@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "orientation": "default",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "com.group14.smarthome",
+      "config": { "googleMaps": { "apiKey": "YOUR_GOOGLE_MAPS_API_KEY" } },
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION", "ACCESS_BACKGROUND_LOCATION", "RECORD_AUDIO"]
+    },
+    "ios": {
+      "bundleIdentifier": "com.group14.smarthome",
+      "config": { "googleMapsApiKey": "YOUR_GOOGLE_MAPS_API_KEY" }
+    },
+    "plugins": [
+      ["expo-location", {
+        "locationAlwaysAndWhenInUsePermission": "SmartHome uses your location to run automations when you arrive or leave home.",
+        "isAndroidBackgroundLocationEnabled": true
+      }],
+      ["expo-audio", { "microphonePermission": "SmartHome uses the microphone for voice commands." }]
+    ]
+  }
+}
